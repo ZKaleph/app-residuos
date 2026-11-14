@@ -1,0 +1,139 @@
+{
+  "nombre": "MobileNetV3",
+  "img_size": 224,
+  "media": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "clases": [
+    "Cartón",
+    "Vidrio",
+    "Metal",
+    "Papel",
+    "Plástico",
+    "Basura general"
+  ],
+  "metricas": {
+    "Modelo": "MobileNetV3",
+    "Familia": "Transfer learning (móvil)",
+    "Img": 224,
+    "Puntaje": 80.95,
+    "F1 macro": 0.8,
+    "Accuracy": 0.824,
+    "Precision macro": 0.795,
+    "Recall macro": 0.812,
+    "Parámetros": 1524006,
+    "Entrenables": 596998,
+    "Segundos entrenamiento": 173.6
+  },
+  "historial": {
+    "train_loss": [
+      1.1018,
+      0.7702,
+      0.654,
+      0.5668,
+      0.542,
+      0.4865,
+      0.4755,
+      0.4022,
+      0.3788,
+      0.3884,
+      0.3489,
+      0.3389
+    ],
+    "val_loss": [
+      0.8726,
+      0.7205,
+      0.6617,
+      0.6344,
+      0.5274,
+      0.5276,
+      0.5771,
+      0.5159,
+      0.5042,
+      0.5293,
+      0.4381,
+      0.4868
+    ],
+    "val_acc": [
+      0.7335,
+      0.7256,
+      0.7441,
+      0.7414,
+      0.8232,
+      0.8021,
+      0.8232,
+      0.8259,
+      0.8338,
+      0.8153,
+      0.8602,
+      0.8443
+    ],
+    "segundos": 173.6
+  },
+  "matriz_confusion": [
+    [
+      51,
+      1,
+      0,
+      6,
+      0,
+      2
+    ],
+    [
+      0,
+      67,
+      3,
+      1,
+      5,
+      0
+    ],
+    [
+      0,
+      4,
+      55,
+      0,
+      1,
+      2
+    ],
+    [
+      3,
+      4,
+      2,
+      70,
+      4,
+      6
+    ],
+    [
+      1,
+      6,
+      4,
+      2,
+      56,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      5,
+      1,
+      14
+    ]
+  ],
+  "f1_por_clase": {
+    "Cartón": 0.887,
+    "Vidrio": 0.848,
+    "Metal": 0.873,
+    "Papel": 0.809,
+    "Plástico": 0.8,
+    "Basura general": 0.583
+  },
+  "descripcion": "MobileNetV3-Small pre-entrenada en ImageNet; capas convolucionales congeladas y clasificador re-entrenado para 6 clases"
+}

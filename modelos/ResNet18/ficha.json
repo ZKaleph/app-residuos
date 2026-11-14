@@ -1,0 +1,139 @@
+{
+  "nombre": "ResNet18",
+  "img_size": 224,
+  "media": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "clases": [
+    "Cartón",
+    "Vidrio",
+    "Metal",
+    "Papel",
+    "Plástico",
+    "Basura general"
+  ],
+  "metricas": {
+    "Modelo": "ResNet18",
+    "Familia": "Transfer learning",
+    "Img": 224,
+    "Puntaje": 72.86,
+    "F1 macro": 0.725,
+    "Accuracy": 0.734,
+    "Precision macro": 0.73,
+    "Recall macro": 0.759,
+    "Parámetros": 11179590,
+    "Entrenables": 3078,
+    "Segundos entrenamiento": 166.1
+  },
+  "historial": {
+    "train_loss": [
+      1.4911,
+      1.0735,
+      0.9287,
+      0.8295,
+      0.7844,
+      0.7327,
+      0.7153,
+      0.6564,
+      0.6627,
+      0.6404,
+      0.6382,
+      0.613
+    ],
+    "val_loss": [
+      1.1709,
+      1.0154,
+      0.93,
+      0.8759,
+      0.8716,
+      0.877,
+      0.8388,
+      0.8234,
+      0.8862,
+      0.8563,
+      0.7889,
+      0.8312
+    ],
+    "val_acc": [
+      0.6148,
+      0.6728,
+      0.6966,
+      0.6887,
+      0.6939,
+      0.7018,
+      0.7282,
+      0.7071,
+      0.7177,
+      0.723,
+      0.7467,
+      0.7203
+    ],
+    "segundos": 166.1
+  },
+  "matriz_confusion": [
+    [
+      47,
+      2,
+      2,
+      5,
+      0,
+      4
+    ],
+    [
+      0,
+      54,
+      10,
+      1,
+      9,
+      2
+    ],
+    [
+      0,
+      12,
+      44,
+      2,
+      0,
+      4
+    ],
+    [
+      1,
+      1,
+      8,
+      70,
+      1,
+      8
+    ],
+    [
+      0,
+      11,
+      8,
+      4,
+      45,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      19
+    ]
+  ],
+  "f1_por_clase": {
+    "Cartón": 0.87,
+    "Vidrio": 0.692,
+    "Metal": 0.657,
+    "Papel": 0.814,
+    "Plástico": 0.703,
+    "Basura general": 0.613
+  },
+  "descripcion": "ResNet-18 pre-entrenada en ImageNet con el backbone congelado; solo se entrena la capa final (fc) de 6 clases"
+}

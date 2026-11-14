@@ -1,0 +1,142 @@
+{
+  "nombre": "MLP",
+  "img_size": 64,
+  "media": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "clases": [
+    "Cartón",
+    "Vidrio",
+    "Metal",
+    "Papel",
+    "Plástico",
+    "Basura general"
+  ],
+  "metricas": {
+    "Modelo": "MLP",
+    "Familia": "MLP",
+    "Img": 64,
+    "Puntaje": 46.49,
+    "F1 macro": 0.452,
+    "Accuracy": 0.484,
+    "Precision macro": 0.494,
+    "Recall macro": 0.442,
+    "Parámetros": 6358406,
+    "Entrenables": 6358406,
+    "Segundos entrenamiento": 83.3
+  },
+  "historial": {
+    "train_loss": [
+      2.0798,
+      1.5796,
+      1.4413,
+      1.3806,
+      1.3267,
+      1.2597,
+      1.235,
+      1.212,
+      1.1776,
+      1.1226,
+      1.118,
+      1.0959,
+      1.0551
+    ],
+    "val_loss": [
+      1.5346,
+      1.471,
+      1.4005,
+      1.381,
+      1.3764,
+      1.3189,
+      1.3588,
+      1.449,
+      1.2898,
+      1.3574,
+      1.3704,
+      1.3039,
+      1.334
+    ],
+    "val_acc": [
+      0.3826,
+      0.4591,
+      0.4644,
+      0.4987,
+      0.533,
+      0.5224,
+      0.5145,
+      0.467,
+      0.4987,
+      0.5172,
+      0.5251,
+      0.5277,
+      0.5699
+    ],
+    "segundos": 83.3
+  },
+  "matriz_confusion": [
+    [
+      31,
+      4,
+      8,
+      9,
+      6,
+      2
+    ],
+    [
+      1,
+      25,
+      8,
+      24,
+      17,
+      1
+    ],
+    [
+      2,
+      16,
+      21,
+      10,
+      12,
+      1
+    ],
+    [
+      3,
+      5,
+      11,
+      59,
+      11,
+      0
+    ],
+    [
+      3,
+      7,
+      5,
+      13,
+      44,
+      1
+    ],
+    [
+      0,
+      10,
+      0,
+      6,
+      0,
+      4
+    ]
+  ],
+  "f1_por_clase": {
+    "Cartón": 0.62,
+    "Vidrio": 0.35,
+    "Metal": 0.365,
+    "Papel": 0.562,
+    "Plástico": 0.54,
+    "Basura general": 0.276
+  },
+  "descripcion": "MLP con la imagen aplanada (64x64x3 = 12,288 entradas), 2 capas ocultas 512-128 con ReLU y Dropout 0.3"
+}
